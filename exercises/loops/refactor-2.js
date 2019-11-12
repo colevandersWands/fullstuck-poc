@@ -20,8 +20,6 @@ for (let x = 9; x > 2; x--) {
   forResult *= x;
 };
 
-console.log('poo')
-
 
 try {
   report.push(['both loops should have the same behavior']);

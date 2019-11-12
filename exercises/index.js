@@ -85,6 +85,7 @@ toLog.forEach(key => {
           if (oldFileIndex !== -1 && oldTimestamp) {
             newFileReport.timeStamp = oldDirectoryReport.files[oldFileIndex].timeStamp;
           }
+          newFileReport.report = [];
           newDirectoryReport.files.push(newFileReport);
         }
         return evaluateFile;
