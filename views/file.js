@@ -26,14 +26,11 @@ function renderFile(dirData, fileName) {
   const statusStats = document.createElement('text');
   statusStats.innerHTML = fileData.status + ': ' + fileData.timeStamp;
 
-
-
   const timeStampEl = document.createElement('text');
   timeStampEl.innerHTML = fileData.timeStamp;
 
-
-
-  fetch('./exercises/' + dirData.dirName + '/' + fileName)
+  const filePath = './exercises/' + dirData.dirName + '/' + fileName;
+  fetch(filePath)
     .then(resp => resp.text())
     .then(code => {
       const codeEl = document.createElement('code');
