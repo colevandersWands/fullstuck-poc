@@ -1,0 +1,7 @@
+better file error handling
+tap into history and url's for link sharing and usabiltiy
+document
+  the repository
+  exercises/index.js
+  on the main live gh-pages
+better-define the reporting format
