@@ -32,7 +32,7 @@
       "report": [
         "✔ both loops should have the same behavior"
       ],
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     },
     {
       "fileName": "refactor-2.js",
@@ -40,9 +40,9 @@
       "report": [
         "✔ both loops should have the same behavior"
       ],
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     }
   ],
-  "timeStamp": "11/12/2019, 10:06:45 PM",
+  "timeStamp": "11/12/2019, 10:36:50 PM",
   "status": "on hold"
 }

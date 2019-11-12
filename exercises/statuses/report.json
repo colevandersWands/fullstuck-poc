@@ -7,7 +7,7 @@
       "fileName": "empty.js",
       "status": "no reports",
       "report": [],
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     },
     {
       "fileName": "error.js",
@@ -15,7 +15,7 @@
       "error": {
         "message": "x is not defined"
       },
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     },
     {
       "fileName": "in-progress.js",
@@ -43,7 +43,7 @@
           }
         }
       ],
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     },
     {
       "fileName": "invalid.js",
@@ -53,7 +53,7 @@
         "expectedType": "Array",
         "actualType": "object"
       },
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     },
     {
       "fileName": "pass.js",
@@ -64,9 +64,9 @@
         "✔ it should do another thing",
         "✔ it should do another thing"
       ],
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     }
   ],
   "evaluated": "11/12/2019, 12:03:23 PM",
-  "timeStamp": "11/12/2019, 10:06:45 PM"
+  "timeStamp": "11/12/2019, 10:36:50 PM"
 }

@@ -1,12 +1,11 @@
 {
-  "warnings": {},
-  "dirName": "challenges",
-  "status": "in progress",
+  "warnings": {
+    "unable to load previous report": "ENOENT: no such file or directory, open './challenges/report.json'"
+  },
   "files": [
     {
       "fileName": "shuffle.js",
       "status": "on hold",
-      "timeStamp": "11/12/2019, 9:45:16 PM",
       "report": []
     },
     {
@@ -15,50 +14,58 @@
       "report": [
         {
           "✗ first": {
+            "actual": "_undefined_",
             "expected": "dEfG",
             "operator": "deepEqual"
           }
         },
         {
           "✗ second": {
+            "actual": "_undefined_",
             "expected": "xYzA",
             "operator": "deepEqual"
           }
         },
         {
           "✗ third": {
+            "actual": "_undefined_",
             "expected": "heLLo worLd!",
             "operator": "deepEqual"
           }
         },
         {
           "✗ fourth": {
+            "actual": "_undefined_",
             "expected": "ifMMp xpsMe!",
             "operator": "deepEqual"
           }
         },
         {
           "✗ fifth": {
+            "actual": "_undefined_",
             "expected": "",
             "operator": "deepEqual"
           }
         },
         {
           "✗ sixth": {
+            "actual": "_undefined_",
             "expected": "mnOpQr",
             "operator": "deepEqual"
           }
         },
         {
           "✗ seventh": {
+            "actual": "_undefined_",
             "expected": "#@&&^M*(#",
             "operator": "deepEqual"
           }
         }
       ],
-      "timeStamp": "11/12/2019, 10:06:45 PM"
+      "timeStamp": "11/12/2019, 10:36:50 PM"
     }
   ],
-  "evaluated": "11/12/2019, 6:25:55 PM",
-  "timeStamp": "11/12/2019, 10:06:45 PM"
+  "dirName": "challenges",
+  "status": "in progress",
+  "timeStamp": "11/12/2019, 10:36:50 PM"
 }

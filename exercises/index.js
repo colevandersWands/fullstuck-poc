@@ -61,6 +61,7 @@ toLog.forEach(key => {
           warnings: {
             'unable to load previous report': err.message
           },
+          files: []
         };
       };
     })();
@@ -81,8 +82,7 @@ toLog.forEach(key => {
         if (!evaluateFile) {
           const newFileReport = { fileName: file, status: 'on hold' };
           const oldFileIndex = oldDirectoryReport.files.findIndex(x => x.fileName === file);
-          const oldTimestamp = oldDirectoryReport.files[oldFileIndex].hasOwnProperty('timeStamp');
-          if (oldFileIndex !== -1 && oldTimestamp) {
+          if (oldFileIndex !== -1) {
             newFileReport.timeStamp = oldDirectoryReport.files[oldFileIndex].timeStamp;
           }
           newFileReport.report = [];
@@ -138,9 +138,9 @@ toLog.forEach(key => {
                           if (x instanceof Error) {
                             if (x.name === 'AssertionError') {
                               const errorLog = {};
-                              x.hasOwnProperty('actual') ? errorLog.actual = x.actual : null;
-                              x.hasOwnProperty('expected') ? errorLog.expected = x.expected : null;
-                              x.hasOwnProperty('operator') ? errorLog.operator = x.operator : null;
+                              errorLog.actual = x.actual;
+                              errorLog.expected = x.expected;
+                              errorLog.operator = x.operator;
                               // x.hasOwnProperty('name') ? errorLog.name = x.name : null;
                               return errorLog;
                             } else {
@@ -217,7 +217,8 @@ toLog.forEach(key => {
       }
     })();
 
-    fs.writeFileSync('./' + directory + '/report.json', JSON.stringify(newDirectoryReport, null, 2));
+    const newDirStr = JSON.stringify(newDirectoryReport, (key, value) => value === undefined ? '_undefined_' : value, 2);
+    fs.writeFileSync('./' + directory + '/report.json', newDirStr);
 
     const slimDirectoryReport = {
       dirName: newDirectoryReport.dirName,
@@ -264,6 +265,7 @@ newRepoReport.status = (() => {
   }
 })();
 
-fs.writeFileSync('./report.json', JSON.stringify(newRepoReport, null, 2));
+const newRepoStr = JSON.stringify(newRepoReport, (key, value) => value === undefined ? '_undefined_' : value, 2);
+fs.writeFileSync('./report.json', newRepoStr);
 
 console.log('\n... all done!');
