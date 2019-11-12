@@ -1,0 +1,44 @@
+{
+  "warnings": {},
+  "dirName": "loops",
+  "files": [
+    {
+      "fileName": "refactor-3.js",
+      "status": "on hold",
+      "timeStamp": "11/12/2019, 7:18:54 PM"
+    },
+    {
+      "fileName": "refactor-4.js",
+      "status": "on hold",
+      "timeStamp": "11/12/2019, 7:18:54 PM"
+    },
+    {
+      "fileName": "refactor-5.js",
+      "status": "on hold",
+      "timeStamp": "11/12/2019, 7:18:54 PM"
+    },
+    {
+      "fileName": "refactor-6.js",
+      "status": "on hold",
+      "timeStamp": "11/12/2019, 7:18:54 PM"
+    },
+    {
+      "fileName": "refactor-1.js",
+      "status": "passing",
+      "report": [
+        "✔ both loops should have the same behavior"
+      ],
+      "timeStamp": "11/12/2019, 9:57:25 PM"
+    },
+    {
+      "fileName": "refactor-2.js",
+      "status": "passing",
+      "report": [
+        "✔ both loops should have the same behavior"
+      ],
+      "timeStamp": "11/12/2019, 9:57:25 PM"
+    }
+  ],
+  "timeStamp": "11/12/2019, 9:57:25 PM",
+  "status": "on hold"
+}

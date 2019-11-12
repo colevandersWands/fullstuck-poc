@@ -1,0 +1,42 @@
+{
+  "warnings": {},
+  "directories": [
+    {
+      "dirName": "challenges",
+      "status": "in progress",
+      "files": {
+        "shuffle.js": "on hold",
+        "caesarize.js": "in progress"
+      },
+      "timeStamp": "11/12/2019, 9:57:25 PM"
+    },
+    {
+      "dirName": "loops",
+      "status": "on hold",
+      "files": {
+        "refactor-3.js": "on hold",
+        "refactor-4.js": "on hold",
+        "refactor-5.js": "on hold",
+        "refactor-6.js": "on hold",
+        "refactor-1.js": "passing",
+        "refactor-2.js": "passing"
+      },
+      "timeStamp": "11/12/2019, 9:57:25 PM"
+    },
+    {
+      "dirName": "statuses",
+      "status": "error",
+      "files": {
+        "empty.js": "no reports",
+        "error.js": "error",
+        "in-progress.js": "in progress",
+        "invalid.js": "invalid",
+        "pass.js": "passing"
+      },
+      "timeStamp": "11/12/2019, 9:57:25 PM"
+    }
+  ],
+  "repoName": "js-in-node",
+  "status": "error",
+  "timeStamp": "11/12/2019, 9:57:25 PM"
+}

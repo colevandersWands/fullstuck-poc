@@ -1,0 +1,63 @@
+{
+  "warnings": {},
+  "dirName": "challenges",
+  "status": "in progress",
+  "files": [
+    {
+      "fileName": "shuffle.js",
+      "status": "on hold",
+      "timeStamp": "11/12/2019, 9:45:16 PM"
+    },
+    {
+      "fileName": "caesarize.js",
+      "status": "in progress",
+      "report": [
+        {
+          "✗ first": {
+            "expected": "dEfG",
+            "operator": "deepEqual"
+          }
+        },
+        {
+          "✗ second": {
+            "expected": "xYzA",
+            "operator": "deepEqual"
+          }
+        },
+        {
+          "✗ third": {
+            "expected": "heLLo worLd!",
+            "operator": "deepEqual"
+          }
+        },
+        {
+          "✗ fourth": {
+            "expected": "ifMMp xpsMe!",
+            "operator": "deepEqual"
+          }
+        },
+        {
+          "✗ fifth": {
+            "expected": "",
+            "operator": "deepEqual"
+          }
+        },
+        {
+          "✗ sixth": {
+            "expected": "mnOpQr",
+            "operator": "deepEqual"
+          }
+        },
+        {
+          "✗ seventh": {
+            "expected": "#@&&^M*(#",
+            "operator": "deepEqual"
+          }
+        }
+      ],
+      "timeStamp": "11/12/2019, 9:57:25 PM"
+    }
+  ],
+  "evaluated": "11/12/2019, 6:25:55 PM",
+  "timeStamp": "11/12/2019, 9:57:25 PM"
+}
