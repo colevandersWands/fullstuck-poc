@@ -28,6 +28,23 @@ function renderRepo(repo) {
   repoNameH1.innerHTML = repo.repoName;
   repoNameH1.style.color = repoColor;
 
+  const tocButton = document.createElement('button');
+  tocButton.innerHTML = 'view table of contents on GitHub';
+
+  const tocA = document.createElement('a');
+  const fileAddress = 'https://github.com/' + userName + repoName + 'blob/master/exercises/table-of-contents.js';
+  tocA.href = fileAddress;
+  tocA.target = '_blank';
+  tocA.appendChild(tocButton);
+
+  const reportButton = document.createElement('button');
+  reportButton.innerHTML = 'view raw report on GitHub';
+
+  const reportA = document.createElement('a');
+  reportA.href = 'https://github.com/' + userName + repoName + 'blob/master/exercises/report.json';
+  reportA.target = '_blank';
+  reportA.appendChild(reportButton);
+
   const statusStats = document.createElement('text');
   statusStats.innerHTML = repo.timeStamp;
 
@@ -43,6 +60,10 @@ function renderRepo(repo) {
 
   const repoDiv = document.createElement('div');
   repoDiv.appendChild(repoNameH1);
+  repoDiv.appendChild(tocA);
+  repoDiv.appendChild(reportA);
+  repoDiv.appendChild(document.createElement('br'));
+  repoDiv.appendChild(document.createElement('br'));
   repoDiv.appendChild(statusStats);
   repoDiv.appendChild(filesListUl);
 

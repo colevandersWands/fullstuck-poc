@@ -51,7 +51,7 @@ function renderFile(dirData, fileName) {
   viewSourceButton.innerHTML = 'view source on GitHub';
 
   const viewSourceA = document.createElement('a');
-  const fileAddress = 'https://github.com/' + userName + repoName + './blob/master/' + filePath;
+  const fileAddress = 'https://github.com/' + userName + repoName + 'blob/master/' + filePath;
   viewSourceA.href = fileAddress;
   viewSourceA.target = '_blank';
   viewSourceA.appendChild(viewSourceButton);

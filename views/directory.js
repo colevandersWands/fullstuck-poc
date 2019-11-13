@@ -15,11 +15,20 @@ function renderDirectory(directory) {
             : 'violet';
 
   const dirNameTextEl = document.createElement('text');
-  dirNameTextEl.innerHTML = directory.dirName;
+  dirNameTextEl.innerHTML = directory.dirName + '         ';
   dirNameTextEl.style.color = dirColor;
+
+  const reportButton = document.createElement('button');
+  reportButton.innerHTML = 'view raw report on GitHub';
+
+  const reportA = document.createElement('a');
+  reportA.href = 'https://github.com/' + userName + repoName + 'blob/master/exercises/' + directory.dirName + '/report.json';
+  reportA.target = '_blank';
+  reportA.appendChild(reportButton);
 
   const dirNameH2 = document.createElement('h2');
   dirNameH2.appendChild(dirNameTextEl);
+  dirNameH2.appendChild(reportA);
 
   const statusTextEl = document.createElement('text');
   statusTextEl.innerHTML = directory.status + ': ' + directory.timeStamp;
