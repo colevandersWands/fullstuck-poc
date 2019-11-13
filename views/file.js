@@ -47,6 +47,18 @@ function renderFile(dirData, fileName) {
     })
     .catch(err => console.log(err));
 
+  const viewSourceButton = document.createElement('button');
+  viewSourceButton.innerHTML = 'view source on GitHub';
+
+  const viewSourceA = document.createElement('a');
+  const userName = window.location.origin.split('https://').join('').split('.').shift();
+  const repoName = window.location.pathname;
+  const fileAddress = 'https://github.com/' + userName + repoName + './blob/master/.' + filePath;
+  viewSourceA.href = fileAddress;
+  viewSourceA.target = '_blank';
+  viewSourceA.appendChild(viewSourceButton);
+
+
   const backButton = document.createElement('button');
   backButton.innerHTML = 'back to index';
   backButton.onclick = () => {
@@ -59,6 +71,7 @@ function renderFile(dirData, fileName) {
   fileDiv.appendChild(document.createElement('br'));
   fileDiv.appendChild(document.createElement('br'));
   fileDiv.appendChild(backButton);
+  fileDiv.appendChild(viewSourceA);
 
   return fileDiv;
 }

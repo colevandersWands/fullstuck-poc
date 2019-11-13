@@ -5,3 +5,9 @@ document
   exercises/index.js
   on the main live gh-pages
 better-define the reporting format
+have github source links open to the file you are viewing
+global state
+  base github url
+  main repo report
+  loaded folder reports
+  url navigation
