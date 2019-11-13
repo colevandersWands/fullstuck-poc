@@ -1,5 +1,4 @@
 const cache = {};
-
 const userName = window.location.origin
   .split('https://').join('')
   .split('http://').join('')
@@ -16,4 +15,9 @@ window.onload = () => {
       render(renderRepo(repoData));
     })
     .catch(err => console.log(err));
+
+  const onGhLink = document.getElementById('source-on-github');
+  onGhLink.href = 'https://github.com/' + userName + repoName;
+
+
 };
