@@ -5,7 +5,11 @@
 function renderFile(dirData, fileName) {
 
   const fileData = dirData.files.filter(file => file.fileName === fileName)[0];
-  renderReport(fileName, fileData.report);
+  if (fileData.error) {
+    console.log(fileName + ':', fileData.error);
+  } else {
+    renderReport(fileName, fileData.report);
+  }
 
   const fileColor = fileData.status === 'no reports'
     ? 'black'
