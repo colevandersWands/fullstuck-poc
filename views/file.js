@@ -52,7 +52,6 @@ function renderFile(dirData, fileName) {
 
   const viewSourceA = document.createElement('a');
   const fileAddress = 'https://github.com/' + userName + repoName + './blob/master/' + filePath;
-  console.log(fileAddress)
   viewSourceA.href = fileAddress;
   viewSourceA.target = '_blank';
   viewSourceA.appendChild(viewSourceButton);
